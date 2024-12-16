@@ -1,21 +1,12 @@
-import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import CenterSection from "./components/CenterSection";
-import WorkSection from "./components/Work";
-import SponsorSection from "./components/Sponsor";
-import Footer from "./components/Footer";
+import Button from "./components/Button";
+import ChildComponent from "./components/ChildComponent";
 
 export default function Home() {
-  return (
-    <div>
-      <main>
-        <Navbar />
-      </main>
-      <HeroSection />
-      <CenterSection />
-      <WorkSection />
-      <SponsorSection />
-      <Footer />
-    </div>
-  )
+	return (
+		<div>
+			<ChildComponent />
+			<Button btnText='Login' bgColor='bg-purple-600' />
+			<Button btnText='Logout' bgColor='bg-red-700' />
+		</div>
+	);
 }
